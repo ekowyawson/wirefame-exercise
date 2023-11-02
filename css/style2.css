@@ -1,0 +1,220 @@
+@font-face {
+  font-family: Righteous;
+  src: url(../fonts/Righteous-Regular.ttf);
+}
+
+h1,
+h2,
+h3 {
+  font-family: Righteous;
+}
+
+body {
+  height: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1,
+h2,
+h3 {
+  padding: 8px 16px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+header {
+  background-color: black;
+  color: salmon;
+}
+
+header nav {
+  background-color: salmon;
+  height: 35px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+nav a {
+  color: black;
+  font-weight: 700;
+  padding: 10px;
+  transition: font-size 0.5s ease-in-out; /* Add a transition for the font-size property */
+}
+
+nav a:hover {
+  color: turquoise;
+  font-size: x-large;
+}
+
+header h1 {
+  padding: 30px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+main {
+  margin: 10px auto;
+  padding: 16px;
+  max-width: fit-content;
+}
+
+/* SECTIONS */
+section.page-heading {
+  text-align: center;
+}
+
+section.salmon-image {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  border-bottom: 3px solid black;
+}
+
+section .location-header {
+  font-weight: 900;
+  padding-left: 0%;
+}
+
+.section-heading {
+  text-align: center;
+  padding: 18px;
+  font-weight: 900;
+}
+
+/* LISTS */
+ul li {
+  list-style: none;
+  margin: 5px 32px;
+  font-size: 1.2em;
+}
+
+.total-sales {
+  font-weight: 900;
+}
+
+/* TABLE */
+table * {
+  padding: 0.5em;
+  text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+table thead {
+  background: grey;
+  color: white;
+}
+
+table tbody {
+  background: salmon;
+  color: black;
+}
+
+table tfoot {
+  background: grey;
+  text-align: center;
+}
+
+#tfoot-tr td,
+#thead-tr th,
+td.loc-totals {
+  border: none;
+  color: white;
+  background: grey;
+  width: max-content;
+  font-weight: 900;
+}
+
+.loc-name,
+.sales-per-hour {
+  border: 1px solid black;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* FORM */
+form {
+  text-align: center;
+}
+
+div.form-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 30px 0;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 110px;
+}
+
+.form-inline button {
+  padding: 5px 5px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* FOOTER AREA */
+footer {
+  background-color: #ccc;
+  padding: 16px 32px;
+  padding-top: 32px;
+  height: 40px;
+  text-align: center;
+}
